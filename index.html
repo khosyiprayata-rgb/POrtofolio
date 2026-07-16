@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portofolio — Khosyi Abqory</title>
+
+    <!-- External CSS & icons -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="overflow">
+      <!-- Navbar -->
+      <nav class="navbar" data-aos="fade-down">
+        <div class="max-width">
+          <div class="logo"><a href="#">Khos<span>yi</span>.</a></div>
+          <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Home -->
+      <section class="home" id="home">
+        <div class="home-bg-image"></div>
+        <div class="home-bg-overlay"></div>
+
+        <div class="max-width home-content-wrapper">
+          <div class="home-content">
+            <div class="text-1">Hi, I'm</div>
+            <div class="text-2">Khosyi abqory prayata</div>
+            <div class="text-3">
+              <span>
+                "A passionate learner in technology and design — I love creating
+                digital experiences that are useful, modern, and meaningful."
+              </span>
+            </div>
+
+            <div class="sfi" data-aos="fade-right">
+              <a href="https://www.instagram.com/ocii_taa/" target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a href="https://www.youtube.com/@KhosyiPrayata" target="_blank"
+                ><i class="fa fa-youtube-play"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+                target="_blank"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/khosyiprayata-rgb?tab=repositories"
+                target="_blank"
+                ><i class="fa fa-github"></i
+              ></a>
+            </div>
+
+            <button
+              class="btn-hire"
+              data-aos="fade-right"
+              onclick="openWhatsApp()"
+            >
+              <p>Contact Me!</p>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about" id="about">
+        <div class="about-bg-image"></div>
+        <div class="about-bg-overlay"></div>
+
+        <div class="max-width about-inner about-content-wrapper">
+          <img data-aos="zoom-in-up" src="./image_khosyi.jpeg" alt="Foto Khosyi" />
+          <div class="about-text">
+            <h2 data-aos="fade-down">About Me</h2>
+            <h5 data-aos="fade-up">Frontend <span>& Developer</span></h5>
+            <p data-aos="fade-up">
+              I'm a Front-End Web Developer from Sanggau, West Kalimantan — born
+              on April 5th, 2010. I focus on building modern, responsive, and
+              user-friendly websites. I work with HTML, CSS, and JavaScript, and
+              I enjoy bringing interface ideas into real interactive web pages.
+              Visual Studio Code is my main editor, and I often use Figma to
+              design UI before coding. For me, technology is more than a subject
+              — it's a path to grow, explore, and build something meaningful for
+              the future.
+            </p>
+            <button
+              class="lets-talk-button"
+              data-aos="fade-up"
+              onclick="openWhatsAppLetsTalk()"
+            >
+              Let's Talk!
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills" id="skills">
+        <div class="skills-bg-image"></div>
+        <div class="skills-bg-overlay"></div>
+
+        <div class="skills-content-wrapper">
+          <div class="tittle" data-aos="fade-up"><h2>My Skills</h2></div>
+          <div class="box">
+            <div class="card" data-aos="fade-up-right">
+              <img src="./image_copy_4.png" alt="HTML" />
+              <h5>HTML</h5>
+              <p>
+                HTML is the core structure that forms the foundation of a
+                website.
+              </p>
+              <p class="center">
+                <a
+                  class="button"
+                  href="https://github.com/khosyiprayata-rgb/tugas-typography-4/blob/main/index.html"
+                  target="_blank"
+                  >Read More!</a
+                >
+              </p>
+            </div>
+
+            <div class="card" data-aos="fade-up-left">
+              <img src="./image_copy_5.png" alt="CSS" />
+              <h5>CSS</h5>
+              <p>
+                CSS shapes the design, visual comfort, and style of a website.
+              </p>
+              <p class="center">
+                <a
+                  class="button"
+                  href="https://github.com/khosyiprayata-rgb/tugas-typography-4/blob/main/style.css"
+                  target="_blank"
+                  >Read More!</a
+                >
+              </p>
+            </div>
+
+            <div class="card" data-aos="fade-down-right">
+              <img src="./image_copy_6.png" alt="JS" />
+              <h5>JavaScript</h5>
+              <p>
+                JavaScript brings websites to life with interactivity and
+                dynamic behavior.
+              </p>
+              <p class="center">
+                <a
+                  class="button"
+                  href="https://id.wikipedia.org/wiki/JavaScript"
+                  target="_blank"
+                  >Read More!</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Works -->
+      <section class="works" id="works">
+        <div class="works-bg-image"></div>
+        <div class="works-bg-overlay"></div>
+
+        <div class="works-content-wrapper">
+          <div class="tittle" data-aos="fade-up"><h2>My Works</h2></div>
+
+          <div class="work-grid">
+            <div class="kartu" data-aos="fade-up-right">
+              <img class="img" src="./image.jpg" alt="Poster" />
+              <div class="card_body">
+                <h6 class="card_tittle">Poster</h6>
+                <p class="card_text">Poster.</p>
+                <button
+                  class="btn-card"
+                  data-link="https://drive.google.com/file/d/1O7qrGZxQTgwjJsLj7vXFjCU-SvXVwuq6/view?usp=sharing"
+                  onclick="openLinkInNewTab(this)"
+                >
+                  see
+                </button>
+              </div>
+            </div>
+
+            <div class="kartu" data-aos="fade-up-left">
+              <img class="img" src="./image_juz_30.png" alt="Motion" />
+              <div class="card_body">
+                <h6 class="card_tittle">Tahfidz</h6>
+                <p class="card_text">Tahfidz</p>
+                <button
+                  class="btn-card"
+                  data-link="https://www.youtube.com/watch?v=VLGwn49yg4w"
+                  onclick="openLinkInNewTab(this)"
+                >
+                  See
+                </button>
+              </div>
+            </div>
+
+            <div class="kartu" data-aos="fade-down-right">
+              <img class="img" src="./image_copy_7.png" alt="Mufrodat" />
+              <div class="card_body">
+                <h6 class="card_tittle">Bahasa Arab</h6>
+                <p class="card_text">Bahasa Arab</p>
+                <button
+                  class="btn-card"
+                  data-link="https://www.youtube.com/shorts/2MBOvvsAva8"
+                  onclick="openLinkInNewTab(this)"
+                >
+                  See
+                </button>
+              </div>
+            </div>
+
+            <div class="kartu" data-aos="fade-down-left">
+              <img class="img" src="./image_copy_10.png" alt="Tahajji" />
+              <div class="card_body">
+                <h6 class="card_tittle">Tahajji</h6>
+                <p class="card_text">Tahajji.</p>
+                <button
+                  class="btn-card"
+                  data-link="https://www.youtube.com/watch?v=qsmBJ4ffoAo"
+                  onclick="openLinkInNewTab(this)"
+                >
+                  See
+                </button>
+              </div>
+            </div>
+
+            <div class="kartu" data-aos="fade-down-left">
+              <img class="img" src="./image_copy_9.png" alt="IT" />
+              <div class="card_body">
+                <h6 class="card_tittle">IT</h6>
+                <p class="card_text">PYTHON.</p>
+                <button
+                  class="btn-card"
+                  data-link="https://github.com/khosyiprayata-rgb/python-Al-quran/commit/b4bd08d0b5bf87f16a496346f5a7fbce1105b6ed"
+                  onclick="openLinkInNewTab(this)"
+                >
+                  See
+                </button>
+              </div>
+            </div>
+
+            <div class="kartu" data-aos="fade-down-left">
+              <img class="img" src="./image_copy_11.png" alt="IT" />
+              <div class="card_body">
+                <h6 class="card_tittle">IT</h6>
+                <p class="card_text">Slicing.</p>
+                <button
+                  class="btn-card"
+                  data-link="https://slicing-asus.vercel.app/index.html"
+                  onclick="openLinkInNewTab(this)"
+                >
+                  See
+                </button>
+              </div>
+            </div>
+
+            <div class="kartu work-card">
+              <img class="img" src="./image_matan.jpg" alt="Matan" />
+              <div class="card_body">
+                <h6 class="card_tittle">Matan</h6>
+                <p class="card_text">Poetry and a collection of matan.</p>
+                <button
+                  class="btn-card"
+                  onclick="location.href = 'project4.html'"
+                >
+                  See
+                </button>
+              </div>
+            </div>
+
+            <div class="kartu" data-aos="fade-down-left">
+              <img class="img" src="./image_perpus.jpg" alt="IT" />
+              <div class="card_body">
+                <h6 class="card_tittle">IT</h6>
+                <p class="card_text">Library.</p>
+                <button
+                  class="btn-card"
+                  data-link="https://khosyi.pythonanywhere.com/"
+                  onclick="openLinkInNewTab(this)"
+                >
+                  See
+                </button>
+              </div>
+            </div>
+
+            <div class="kartu work-card">
+              <img class="img" src="./Pekerjaan_rumah.jpg" alt="All my work at home" />
+              <div class="card_body">
+                <h6 class="card_tittle">All my work at home</h6>
+                <p class="card_text">Homework</p>
+                <button
+                  class="btn-card"
+                  onclick="location.href = 'project5.html'"
+                >
+                  See
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <div class="contact-bg-image"></div>
+        <div class="contact-bg-overlay"></div>
+
+        <div class="max-width contact-content-wrapper">
+          <div class="contact-content" data-aos="fade-up">
+            <h2>Get In Touch</h2>
+            <p class="contact-desc">
+              Need more information or want to collaborate? Feel free to contact
+              me — I'm open for projects, discussions, and teamwork.
+            </p>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fa fa-envelope"></i>
+                <span>khosyiprayata@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fa fa-phone"></i>
+                <span>+62 851 3886 7524</span>
+              </div>
+              <div class="contact-item">
+                <i class="fa fa-map-marker"></i>
+                <span>Sanggau, West kalimantan, Indonesia</span>
+              </div>
+            </div>
+
+            <div class="sosial-media">
+              <a
+                href="https://web.whatsapp.com/"
+                onclick="openWhatsApp()"
+                class="sosial-link"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <i class="fa fa-whatsapp"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/ocii_taa/"
+                target="_blank"
+                class="sosial-link"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@KhosyiPrayata"
+                target="_blank"
+                class="sosial-link"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <i class="fa fa-youtube-play"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+                target="_blank"
+                class="sosial-link"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/khosyiprayata-rgb?tab=repositories"
+                target="_blank"
+                class="sosial-link"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-bg-image"></div>
+        <p>© 2025 khosyi abqory prayata — All Rights Reserved.</p>
+      </footer>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
